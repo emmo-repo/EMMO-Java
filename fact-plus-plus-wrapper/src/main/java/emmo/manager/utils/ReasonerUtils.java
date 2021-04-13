@@ -39,9 +39,9 @@ public class ReasonerUtils {
 
 	private static final String WORKING_DIRECTORY = ""; //"C:\\Dropbox (Personal)\\Goldbeck\\EMMO\\1.0.0-alpha2\\";
 	
-	private static void convertOntologicalFormats(String outputFormat, OWLOntologyManager manager) {
-		
-	}
+//	private static void convertOntologicalFormats(String outputFormat, OWLOntologyManager manager) {
+//		
+//	}
 	
 	public static void main(String[] args) {
 		String libraryPath = init();
