@@ -37,7 +37,12 @@ import java.io.Writer;
 public class FaCTPlusPlusRenderingViewComponent extends
         AbstractOntologyRenderingViewComponent {
 
-    protected void renderOntology(OWLOntology ontology, Writer writer)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7038966331943703585L;
+
+	protected void renderOntology(OWLOntology ontology, Writer writer)
             throws Exception {
         writer.append("Not implemented for owlapi v3");
         // FaCTPlusPlusRenderer renderer = new FaCTPlusPlusRenderer(writer);
