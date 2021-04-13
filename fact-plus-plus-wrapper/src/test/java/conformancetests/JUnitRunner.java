@@ -27,10 +27,10 @@ import org.semanticweb.owlapi.profiles.OWLProfileReport;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
-@SuppressWarnings({ "javadoc", "null" })
+@SuppressWarnings("javadoc")
 public class JUnitRunner {
 
-    private static final int _10000 = 1000000;
+//    private static final int _10000 = 1000000;
 
     public static void print(String premise) throws OWLException {
         OWLOntology o = OWLManager.createOWLOntologyManager()
@@ -153,7 +153,9 @@ public class JUnitRunner {
                 (OWLOntologyChangeListener) reasoner);
     }
 
-    private static OWLReasoner roundtrip(OWLReasoner r) {
+    
+    @SuppressWarnings("unused")
+	private static OWLReasoner roundtrip(OWLReasoner r) {
         try {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             ObjectOutputStream stream = new ObjectOutputStream(out);
