@@ -1,0 +1,875 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://emmo.info/emmo/application/amiii#"
+     xml:base="http://emmo.info/emmo/application/amiii"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo="http://emmo.info/emmo#967080"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:emmo1="http://emmo.info/emmo#"
+     xmlns:emmo2="http://emmo.info/emmo#0"
+     xmlns:emmo3="http://emmo.info/emmo#35"
+     xmlns:emmo4="http://emmo.info/emmo#499"
+     xmlns:emmo5="http://emmo.info/emmo#2"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:manufacturing="http://emmo.info/emmo/middle/manufacturing#36">
+    <owl:Ontology rdf:about="http://emmo.info/emmo/application/amiii">
+        <owl:versionIRI rdf:resource="http://emmo.info/emmo/application/amiii"/>
+        <terms:contributor xml:lang="en">Jeper Friis (SINTEF)</terms:contributor>
+        <terms:contributor xml:lang="en">Julian Dizy (AMIII)</terms:contributor>
+        <terms:creator xml:lang="en">Emanuele Ghedini (UNIBO)</terms:creator>
+        <terms:license xml:lang="en">Confidential within the OntoTrans consortium.</terms:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#35c29eb6_f57e_48d8_85af_854f9e926e77 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#35c29eb6_f57e_48d8_85af_854f9e926e77"/>
+    
+
+
+    <!-- http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a -->
+
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    
+
+
+    <!-- http://emmo.info/emmo#e1097637_70d2_4895_973f_2396f04fa204 -->
+
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#e1097637_70d2_4895_973f_2396f04fa204"/>
+    
+
+
+    <!-- http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901 -->
+
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+    
+
+
+    <!-- http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d -->
+
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+    
+
+
+    <!-- http://emmo.info/emmo#bafc17b5_9be4_4823_8bbe_ab4e90b6738c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#bafc17b5_9be4_4823_8bbe_ab4e90b6738c"/>
+    
+
+
+    <!-- http://emmo.info/emmo#cd2cd0de_e0cc_4ef1_b27e_2e88db027bac -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+    
+
+
+    <!-- http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+    
+
+
+    <!-- http://emmo.info/emmo#1b52ee70_121e_4d8d_8419_3f97cd0bd89c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+    
+
+
+    <!-- http://emmo.info/emmo#13191289_6c2b_4741_93e1_82d53bd0e703 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#13191289_6c2b_4741_93e1_82d53bd0e703"/>
+    
+
+
+    <!-- http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+    
+
+
+    <!-- http://emmo.info/emmo#71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a"/>
+    
+
+
+    <!-- http://emmo.info/emmo#7509da43_56b1_4d7f_887a_65d1663df4ba -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#7509da43_56b1_4d7f_887a_65d1663df4ba"/>
+    
+
+
+    <!-- http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#EMMO_f4dc499f_659c_4394_acba_56bc5d460dc9 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#EMMO_f4dc499f_659c_4394_acba_56bc5d460dc9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <skos:prefLabel xml:lang="en">BeamBlankLength</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#_6fe0_4daa_bf28_1d81e88d3696 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#_6fe0_4daa_bf28_1d81e88d3696">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Amount of perfume in a capsule.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PerfumeLevel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a1_f2f0_4c96_bedb_7001a9dd0a35 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#a1_f2f0_4c96_bedb_7001a9dd0a35">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Specific perfume existing.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PerfumeBoostTechnology</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a2896_0594_4735_8dc9_b1f53d377bd6 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#a2896_0594_4735_8dc9_b1f53d377bd6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Heat treatment process consisting on rapidly cooling the material using a lower temperature liquid, in this case water(quenching). When dealing with large cross-section products the internal heat is enough to increase again the temperature to intermediate levels and it is air-cooled until it reaches ambient temperature (self-tempering).</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">QuenchingTempering</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a76c12_7bb2_4c7c_a35a_250e5fdacb10 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#a76c12_7bb2_4c7c_a35a_250e5fdacb10">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#e9bc2_06aa_4d1e_bcc2_a06d9f945a11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Parts of the (shaped) mother beam that are cut in the saw to be sold to customers.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">DaughterBeam</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a8b2ad_77a0_46da_a1fb_a06d3b8e6774 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#a8b2ad_77a0_46da_a1fb_a06d3b8e6774">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Name of the  country of commercialization.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:comment xml:lang="en">A string specifying a country according to ...</rdfs:comment>
+        <skos:prefLabel xml:lang="en">Country</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ac713_0cce_486b_af64_717fc26dcf6c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ac713_0cce_486b_af64_717fc26dcf6c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Price of the package as defined by the retailer.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Price</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#afa509dd_3b8f_4d54_9368_15cd1fcbf363 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#afa509dd_3b8f_4d54_9368_15cd1fcbf363">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Product performance from multi-dimensions to evaluate product features for capsules.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ComponentPerformance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b0da5c05_b93c_4bb1_9714_87f30191f86c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#b0da5c05_b93c_4bb1_9714_87f30191f86c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The % of shops handling the product according to retailer policy.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PresenceOnTheShelf</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b3b57253_ce14_47c9_8f26_9f78b6943bfa -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#b3b57253_ce14_47c9_8f26_9f78b6943bfa">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#f51_6c54_4c75_b3a6_f8f3514a1f81"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#ede568a5_e33a_4901_bd19_2d924deb2774"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Product obtained from continuous casting, its shape is more similar to the final shape of the beam than a square/rectangular bloom, but has the same function: it is the starting shape for the rolling process.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">BeamBlank</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b45b2ae9_6be4_4941_978e_61761a6aad3e -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#b45b2ae9_6be4_4941_978e_61761a6aad3e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Name or code of the retailer.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Retailer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#bf3077_e05d_4f59_8e45_e03db42f4377 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#bf3077_e05d_4f59_8e45_e03db42f4377">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+        <skos:prefLabel xml:lang="en">Modeller</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#c2ee9482_2ec9_4982_b55e_1951f50aa547 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#c2ee9482_2ec9_4982_b55e_1951f50aa547">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Process of heating the beam blank (it cools down after continuous casting too much to proceed without reheating) before the rolling starts to improve formability of the steel, as it is impossible to cold roll such large cross sections.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Reheating</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#c5529b40_adb7_440f_ae97_d3696e4582a9 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#c5529b40_adb7_440f_ae97_d3696e4582a9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#dbaf0721_bb36_4194_a637_284476dd1b2c"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#ccd9871_fc16_4e84_a156_9fd723cf177e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Parts of the (shaped) mother beam that are cut in the saw with the purpose of being tested to verify that product specifications are met.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Sample</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#c8298_07a9_4fbf_a8ed_bc0bdd8229a6 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#c8298_07a9_4fbf_a8ed_bc0bdd8229a6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+        <skos:prefLabel xml:lang="en">Measurer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#c9d8a9f9_5bd9_424d_98ed_7a67dfb729c0 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#c9d8a9f9_5bd9_424d_98ed_7a67dfb729c0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#bafc17b5_9be4_4823_8bbe_ab4e90b6738c"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Process to evaluate the properties of a material. In this case it refers to destructive testing in the form of tensile and toughness tests to measure the mechanical properties of the steel.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Testing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#cc93b5ef_482c_4e81_bc78_0603e50ea7d5 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#cc93b5ef_482c_4e81_bc78_0603e50ea7d5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ded_eea5_4d5e_803e_60ae427039f1"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Second step of the rolling process performed on a reversible tandem mill (two different sets of working cylinders) that transforms the intermediate product into an almost finished section.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">RollingTandem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ccd9871_fc16_4e84_a156_9fd723cf177e -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ccd9871_fc16_4e84_a156_9fd723cf177e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Process of cutting a (shaped) mother beam into smaller parts that are either daughter beams (to be sold or stockpiled), samples for testing or scrap.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Sawing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#d16f3270_d78f_4fc0_8207_1f8869a1a577 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#d16f3270_d78f_4fc0_8207_1f8869a1a577">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Package type.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PackageType</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#d3b00ef1_9458_4294_8ce9_322cd7a59bc8 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#d3b00ef1_9458_4294_8ce9_322cd7a59bc8">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#13191289_6c2b_4741_93e1_82d53bd0e703"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#c9d8a9f9_5bd9_424d_98ed_7a67dfb729c0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">Specimen</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#db_cc73_4b5a_9160_b2517c6b268d -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#db_cc73_4b5a_9160_b2517c6b268d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Units sold per week.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">SalesVolume</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#dbaf0721_bb36_4194_a637_284476dd1b2c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#dbaf0721_bb36_4194_a637_284476dd1b2c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <skos:prefLabel xml:lang="en">Steel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Generic reference to any long product manufactured at the mill.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Beam</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ded_eea5_4d5e_803e_60ae427039f1 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ded_eea5_4d5e_803e_60ae427039f1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#2eb10b5b_900b_44d7_af85_4de9a3729474"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#cc93b5ef_482c_4e81_bc78_0603e50ea7d5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#2eb10b5b_900b_44d7_af85_4de9a3729474"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#f2ce7_be04_46e5_afd2_ca57e33c1b2f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Metal forming process in which a metal is passed between several rolls (cylinders) to obtain a specific thickness and mechanical properties.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Rolling</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#e0ec_5d92_45be_8974_61954c6965a6 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#e0ec_5d92_45be_8974_61954c6965a6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Process which solidifies molten metal continuosly without interruptions. The material is cut once solidified to obtain beam blanks, but no interruptions in the material flow occur upstream.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ContinuousCasting</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#e1b3d8_0b41_4c8c_9108_9ef058d40f9c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#e1b3d8_0b41_4c8c_9108_9ef058d40f9c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Perfume name to apply to capsules.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PerfumeType</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#e9bc2_06aa_4d1e_bcc2_a06d9f945a11 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#e9bc2_06aa_4d1e_bcc2_a06d9f945a11">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#a76c12_7bb2_4c7c_a35a_250e5fdacb10"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#f51_6c54_4c75_b3a6_f8f3514a1f81"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Complete beam after the rolling process is finished. Its shape is not modified significantly during heat treatment and it is cut in the saw to obtain the final results: daughter beams and samples.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ShapedMotherBeam</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ede568a5_e33a_4901_bd19_2d924deb2774 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ede568a5_e33a_4901_bd19_2d924deb2774">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#7509da43_56b1_4d7f_887a_65d1663df4ba"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#dbaf0721_bb36_4194_a637_284476dd1b2c"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Steel at high enough temperature that it becomes liquid. It is the input material for continuous casting.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">MoltenSteel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#ef99cf90_32ed_4c07_8248_2d8966181034 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#ef99cf90_32ed_4c07_8248_2d8966181034">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+        <skos:prefLabel xml:lang="en">Assigner</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#f2ce7_be04_46e5_afd2_ca57e33c1b2f -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#f2ce7_be04_46e5_afd2_ca57e33c1b2f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ded_eea5_4d5e_803e_60ae427039f1"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">First step of the rolling process performed on a reversible mill, acting on beam blanks (blooms have rectangular cross section, but are conceptually equivalent) to obtain an intermediate product.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">RollingBlooming</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#f51_6c54_4c75_b3a6_f8f3514a1f81 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#f51_6c54_4c75_b3a6_f8f3514a1f81">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/amiii#ddf53dba_ad95_4ffb_9dad_f99a3c377929"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#e9bc2_06aa_4d1e_bcc2_a06d9f945a11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/amiii#b3b57253_ce14_47c9_8f26_9f78b6943bfa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Intermediate product, referring to all the intermediate results once the beam blank is reheated until its final shape is achieved, that is from the start to the end of the rolling process.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">InProcessBeam</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#f564ad8d_b733_4e71_81a3_4f15d71dfaa8 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#f564ad8d_b733_4e71_81a3_4f15d71dfaa8">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Time for complete dissolution of the capsule.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">DissolutionTime</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#fa38481a_4e0a_4749_95a2_53a9fa19d19f -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/amiii#fa38481a_4e0a_4749_95a2_53a9fa19d19f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#d9588363_bf09_4d5d_95d3_cd9b203a3b61"/>
+        <emmo:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Number of pods contained by the shelf product.</emmo:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ProductSize</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#EMMO_f688e0fc_a43a_4051_9e2b_b27d0f77af84 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#EMMO_f688e0fc_a43a_4051_9e2b_b27d0f77af84">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#EMMO_f4dc499f_659c_4394_acba_56bc5d460dc9"/>
+        <skos:prefLabel xml:lang="en">beam_blank_length</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#_cb64_4831_abca_7bf86de09c11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#_cb64_4831_abca_7bf86de09c11">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#f2ce7_be04_46e5_afd2_ca57e33c1b2f"/>
+        <emmo3:c29eb6_f57e_48d8_85af_854f9e926e77 rdf:resource="http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3"/>
+        <skos:prefLabel xml:lang="en">rolling_blooming</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a0b11f89_3236_4c78_8ebb_36157b50b5ed -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#a0b11f89_3236_4c78_8ebb_36157b50b5ed">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#ded_eea5_4d5e_803e_60ae427039f1"/>
+        <emmo5:eb10b5b_900b_44d7_af85_4de9a3729474 rdf:resource="http://emmo.info/emmo/application/amiii#_cb64_4831_abca_7bf86de09c11"/>
+        <emmo5:eb10b5b_900b_44d7_af85_4de9a3729474 rdf:resource="http://emmo.info/emmo/application/amiii#fd03328_d0a1_43c9_8adf_e027217cb810"/>
+        <skos:prefLabel xml:lang="en">rolling</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a485_7b97_46fe_84ef_94a9602cb49b -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#a485_7b97_46fe_84ef_94a9602cb49b">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#b3b57253_ce14_47c9_8f26_9f78b6943bfa"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3"/>
+        <skos:prefLabel xml:lang="en">beam_blank</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#e9bc2_06aa_4d1e_bcc2_a06d9f945a11"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#b9_955a_4437_8ec0_e92086e1517e"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#d193d669_b55b_4145_8ed5_1d18696460d0"/>
+        <skos:prefLabel xml:lang="en">shaped_mother_beam</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b0b85114_cff5_4459_9a5f_1dae94966d2d -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#b0b85114_cff5_4459_9a5f_1dae94966d2d">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#a2896_0594_4735_8dc9_b1f53d377bd6"/>
+        <emmo3:c29eb6_f57e_48d8_85af_854f9e926e77 rdf:resource="http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c"/>
+        <skos:prefLabel xml:lang="en">quenching_tempering</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b2a_3ca0_499a_90af_a4bcac4b37d3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#b2a_3ca0_499a_90af_a4bcac4b37d3">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#d3b00ef1_9458_4294_8ce9_322cd7a59bc8"/>
+        <skos:prefLabel xml:lang="en">specimen_1</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b710a010_87fd_4388_a47d_ad658351e756 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#b710a010_87fd_4388_a47d_ad658351e756">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#ede568a5_e33a_4901_bd19_2d924deb2774"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#a485_7b97_46fe_84ef_94a9602cb49b"/>
+        <skos:prefLabel xml:lang="en">molten_steel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#b9_955a_4437_8ec0_e92086e1517e -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#b9_955a_4437_8ec0_e92086e1517e">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#c5529b40_adb7_440f_ae97_d3696e4582a9"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#b2a_3ca0_499a_90af_a4bcac4b37d3"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#f316a392_2e81_4078_b4a4_388c54ed2bc9"/>
+        <skos:prefLabel xml:lang="en">sample</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#c6d0cbda_0517_4971_8d63_07ba6a22b01f -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#c6d0cbda_0517_4971_8d63_07ba6a22b01f">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#c9d8a9f9_5bd9_424d_98ed_7a67dfb729c0"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/amiii#b2a_3ca0_499a_90af_a4bcac4b37d3"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/amiii#f316a392_2e81_4078_b4a4_388c54ed2bc9"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/amiii#b9_955a_4437_8ec0_e92086e1517e"/>
+        <skos:prefLabel xml:lang="en">testing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#cd18a6_23d2_4c7d_a4f5_5d4e522450b4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#cd18a6_23d2_4c7d_a4f5_5d4e522450b4">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#c2ee9482_2ec9_4982_b55e_1951f50aa547"/>
+        <emmo2:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/amiii#a485_7b97_46fe_84ef_94a9602cb49b"/>
+        <skos:prefLabel xml:lang="en">reheating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#d193d669_b55b_4145_8ed5_1d18696460d0 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#d193d669_b55b_4145_8ed5_1d18696460d0">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#a76c12_7bb2_4c7c_a35a_250e5fdacb10"/>
+        <skos:prefLabel xml:lang="en">daughter_beam</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#f51_6c54_4c75_b3a6_f8f3514a1f81"/>
+        <emmo4:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c"/>
+        <skos:prefLabel xml:lang="en">in_process_beam</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#e2fd05d_e80c_457c_b160_af13c9c63a9b -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#e2fd05d_e80c_457c_b160_af13c9c63a9b">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#ccd9871_fc16_4e84_a156_9fd723cf177e"/>
+        <emmo2:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/amiii#b9_955a_4437_8ec0_e92086e1517e"/>
+        <emmo2:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/amiii#d193d669_b55b_4145_8ed5_1d18696460d0"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c"/>
+        <skos:prefLabel xml:lang="en">sawing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#f28dfb21_56a8_4639_b5ed_9f3dcfefc3e6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#f28dfb21_56a8_4639_b5ed_9f3dcfefc3e6">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#e0ec_5d92_45be_8974_61954c6965a6"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/amiii#b710a010_87fd_4388_a47d_ad658351e756"/>
+        <emmo2:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/amiii#a485_7b97_46fe_84ef_94a9602cb49b"/>
+        <skos:prefLabel xml:lang="en">continuous_casting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#f316a392_2e81_4078_b4a4_388c54ed2bc9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#f316a392_2e81_4078_b4a4_388c54ed2bc9">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#d3b00ef1_9458_4294_8ce9_322cd7a59bc8"/>
+        <skos:prefLabel xml:lang="en">specimen_2</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/amiii#fd03328_d0a1_43c9_8adf_e027217cb810 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/amiii#fd03328_d0a1_43c9_8adf_e027217cb810">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/amiii#cc93b5ef_482c_4e81_bc78_0603e50ea7d5"/>
+        <emmo2:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/amiii#a6ec390_2005_4c17_a442_87ccac37813c"/>
+        <emmo3:c29eb6_f57e_48d8_85af_854f9e926e77 rdf:resource="http://emmo.info/emmo/application/amiii#d2ba24a_1986_4704_887c_2bf364303fb3"/>
+        <skos:prefLabel xml:lang="en">rolling_tandem</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.19.2021-07-31T19:16:32Z) https://github.com/owlcs/owlapi/ -->
+
+

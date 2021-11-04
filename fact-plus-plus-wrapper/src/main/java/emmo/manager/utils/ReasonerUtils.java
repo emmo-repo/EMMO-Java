@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
@@ -39,11 +40,7 @@ public class ReasonerUtils {
 
 	private static final String WORKING_DIRECTORY = ""; //"C:\\Dropbox (Personal)\\Goldbeck\\EMMO\\1.0.0-alpha2\\";
 	
-//	private static void convertOntologicalFormats(String outputFormat, OWLOntologyManager manager) {
-//		
-//	}
-	
-	public static void main(String[] args) {
+	private static void core(String[] args) {
 		String libraryPath = init();
 		
 //		System.setProperty("factpp.jni.path", "C:\\GitRepositories\\factplusplus\\FaCT++.Java\\src\\main\\resources\\lib\\native\\64bit\\FaCTPlusPlusJNI.dll");
@@ -53,15 +50,10 @@ public class ReasonerUtils {
 		OWLOntologyManager mergedOntologyManager = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		
-//		OWLOntologyIRIMapper autoIRIMapper = new AutoIRIMapper(new File(WORKING_DIRECTORY), true);
-//        manager.addIRIMapper(autoIRIMapper);
-		
-//		manager.setOntologyLoaderConfiguration(config);
-		
-		String iri = "https://emmo.info/emmo/1.0.0-alpha2";
+		String iri = "C:/GitRepositories/EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
 		String outputFormat = "rdf";
-		String destinationPath = WORKING_DIRECTORY+"emmo-inferred."+outputFormat;
-		String options = null;
+		String destinationPath = WORKING_DIRECTORY+"output";
+		String options = "secpodj";
 		
 		Boolean useReasoner = true;
 		Boolean remapURIs = true;
@@ -118,93 +110,100 @@ public class ReasonerUtils {
 			}
 		}
 		
-//		int position = 0;
-//		
-//		try {
-//			iri = args[position];
-//			position++;
-//		} catch(Exception e) {
-//			
-//		}
-//		if(iri==null) {
-//			iri = "https://emmo.info/emmo/1.0.0-alpha2";
-//			//iri = "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-alpha2/emmo.owl";
-//		}
-//		
-//		String destinationPath = null;
-//		try {
-//			destinationPath = args[position];
-//			position++;
-//		} catch(Exception e) {
-//			
-//		}
-//		if(destinationPath==null) {
-//			destinationPath = WORKING_DIRECTORY+"export-inferred-.owl";
-//		}
-//		
-//		String options = null;
-//		try {
-//			options = args[position];
-//			position++;
-//		} catch(Exception e) {
-//			
-//		}
-//		String outputFormat = null;
-//		try {
-//			outputFormat = args[position];
-//		} catch(Exception e) {
-//			
-//		}
-//		if(outputFormat==null) {
-//			outputFormat = "rdf";
-//		}
-		System.out.println("Fact++ JNI library path: "+libraryPath);	
-		System.out.println("*** IRI: "+iri);
-		System.out.println("*** Destination file path: "+destinationPath);
+		System.out.println("*** Fact++ JNI library path: "+libraryPath);	
+		System.out.println("*** Input ontology IRI/file path: "+iri);
+		System.out.println("*** Destination file/folder path: "+destinationPath);
 		System.out.println("*** Options: "+options);
 		System.out.println("*** Output format: "+outputFormat);
 		System.out.println("*** Generate inferred ontology: "+useReasoner);
 		System.out.println("*** Map hexadecimal URIs to verbose URIs: "+remapURIs);
 		
-		generateInferredOntology(manager, mergedOntologyManager, iri, destinationPath, options, outputFormat, useReasoner, remapURIs);
+		processOntology(manager, mergedOntologyManager, iri, destinationPath, options, outputFormat, useReasoner, remapURIs);
 	}
-
-	private static void generateInferredOntology(OWLOntologyManager manager,
-			OWLOntologyManager mergedOntologyManager, String iri,
-			String destinationPath, String options, String outputFormat, Boolean useReasoner, Boolean remapURIs) {
+	
+	private static void processOntology(
+			OWLOntologyManager manager,
+			OWLOntologyManager mergedOntologyManager, 
+			String iri,
+			String destinationPath, 
+			String options, 
+			String outputFormat, 
+			Boolean useReasoner, 
+			Boolean remapURIs) {
+		boolean folder = false;
 		try {
+			File outputFile = null;
+			List<String> destinationFilePaths = new ArrayList<String>();
 			//			ont = mngr.loadOntologyFromOntologyDocument(IRI.cre)
 			OWLOntology emmo = null;
 			OWLOntology emmoMerged = null;
 			OWLReasoner reasoner = null;
 			if(iri.contains("http")) {
+				System.out.println("*** Remote ontology detected with URI: "+iri);
 				emmo = manager.loadOntology(IRI.create(iri)); 
-			} else {
+			} else if(!iri.endsWith(".rdf") && !iri.endsWith(".ttl") && !iri.endsWith(".owl")) {
+				System.out.println("*** Directory detected; processing and converting ontology files found within it...");
+				folder = true;
+				
+				File[] files = new File(iri).listFiles();
+				for(File f: files) {
+					if(!f.isDirectory() && (f.getName().endsWith(".rdf") || f.getName().endsWith(".owl") || f.getName().endsWith(".ttl"))) {
+						convertFile(manager, f, destinationPath, destinationFilePaths);
+					} else if(f.isDirectory()) {
+						
+//						if(!f.getName().equals("application")) {
+						
+	//						System.err.println("Found a directory: "+f.getAbsolutePath());
+							File[] innerFiles = f.listFiles();
+							for(File inf: innerFiles) {
+	//							System.err.println("Found file: "+inf.getAbsolutePath());
+								if(inf.getName().endsWith(".rdf") || inf.getName().endsWith(".owl") || inf.getName().endsWith(".ttl")) {
+									convertFile(manager, inf, destinationPath, destinationFilePaths);
+								}
+							}
+//						}
+					}
+//					System.out.println("------- Saving merged ontology file...");
+//					saveOntologyToFile(manager, destinationPath+File.separator+"merged.rdf", emmoMerged, new RDFXMLDocumentFormat());
+				}
+				
+			} else {	
+				System.out.println("*** Single ontology file detected.");
 				emmo = manager.loadOntologyFromOntologyDocument(new File(iri));
+			
 			}
 
-
-
-			if(useReasoner) {
-
+			/* 
+			 * Merge ontologies
+			 * 
+			 */
+			
+			if(!folder) {
 				OWLOntologyMerger merger = new OWLOntologyMerger(manager);
 				Set<OWLOntology> imports = emmo.getImports();
 				for(OWLOntology i: imports) {
 					System.out.println("Imported: "+i.getOntologyID().getOntologyIRI().get());
-					try {
-						mergedOntologyManager.loadOntology(i.getOntologyID().getOntologyIRI().get());
-					} catch(Exception e) {
-						System.err.println("Could not merge: "+i.getOntologyID().getOntologyIRI().get()+" - "+e.getMessage());
-						e.printStackTrace();
-					}
+					mergeOntology(mergedOntologyManager, i);
 				}
 
-
-
 				emmoMerged = merger.createMergedOntology(mergedOntologyManager, IRI.create(iri+"merged.owl")); 
+			} else {
+//				OWLOntologyManager man = OWLManager.createOWLOntologyManager();
+				OWLOntologyMerger merger = new OWLOntologyMerger(mergedOntologyManager);
+				for(String destinationFilePath: destinationFilePaths) {
+//					OWLOntology i = man.loadOntologyFromOntologyDocument(new File(destinationFilePath));
+//					System.out.println("Loaded: "+i.getOntologyID().getOntologyIRI().get());
+					mergeOntologyFromDocuments(mergedOntologyManager, destinationFilePath);
+				}
+				emmoMerged = merger.createMergedOntology(mergedOntologyManager, IRI.create(iri+"merged.owl"));
+			}
+			
+			if(useReasoner) {
 
+				
+								
 				OWLReasonerFactory fac = new FaCTPlusPlusReasonerFactory();
-				reasoner = fac.createReasoner(emmo);
+				reasoner = fac.createReasoner(emmoMerged);
 				//			reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
 
@@ -268,31 +267,97 @@ public class ReasonerUtils {
 			if(emmoMerged==null) {
 				emmoMerged = emmo;
 			}
-			File outputFile = new File(destinationPath);
-			// Save the inferred ontology.
-			manager.saveOntology(emmoMerged,
-					format,
-					IRI.create((outputFile.toURI())));
+			String asserted = "_inferred";
+			if(!useReasoner) {
+				asserted = "_asserted";
+			}
+			
+			if(emmoMerged!=null) {
+				System.out.println("*** Saving merged ontology...");
+				outputFile = saveOntologyToFile(manager, destinationPath+File.separator+"full_ontology"+asserted+"."+outputFormat, emmoMerged, format);
+				
+				/* Fixing errors */
+				fixErrors(outputFile);
+				
+				/* Remapping hexadecimal URIs to verbose URIs: */
+				if(remapURIs) {
+					System.out.println("*** Remapping hexadecimal URIs to verbose URIs...");
+					StringBuilder sb = new StringBuilder("");
+					try {
+						for(String destinationFilePath: destinationFilePaths) {
+							sb.append(EMMOUtils.generateRenamingMap(destinationFilePath));
+						}
+						CommonUtils.printFileUsingPrintWriter(sb.toString(), "files/renamingMap.txt", "UTF-8");
+						
+						EMMOUtils.replaceHexadecimalUrisWithLabels(outputFile.getAbsolutePath(), false);
+					} catch(Exception e) {
+						System.err.println("Could not rename the ontology's URIs - "+e.getMessage());
+					}
+				}
+			}
 
 			// Terminate the worker threads used by the reasoner.
 			if(reasoner!=null) {
 				reasoner.dispose();
 			}
 			
-			/* Fixing errors */
-			String f = CommonUtils.readTextFile(outputFile.getAbsolutePath(), "UTF-8");
-			if(f.contains("#decimal")) {
-				f = f.replace("#decimal", "#double");
-				CommonUtils.printFileUsingPrintWriter(f, outputFile.getAbsolutePath(), "UTF-8");
+			if(outputFile!=null) {
+				System.out.println("Ontology produced within: "+outputFile.getAbsolutePath());
 			}
 			
-			/* Remapping hexadecimal URIs to verbose URIs: */
-			if(remapURIs) {
-				EMMOUtils.replaceHexadecimalUrisWithLabels(outputFile.getAbsolutePath());
-			}
+			System.out.println("Done."); 
 			
 		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
 			e.printStackTrace();
+		}
+	}
+
+	private static OWLOntology convertFile(OWLOntologyManager manager, File sourceFile, String destinationPath, List<String> destinationFilePaths) throws OWLOntologyCreationException, OWLOntologyStorageException {
+		OWLOntology emmo;
+		emmo = manager.loadOntologyFromOntologyDocument(sourceFile);
+		if(sourceFile.getName().endsWith(".ttl")) {
+			System.out.println("--- Converting file: "+sourceFile.getAbsolutePath()+" to RDF/XML format...");
+			String destinationFilePath = destinationPath+File.separator+sourceFile.getName().substring(0, sourceFile.getName().lastIndexOf("."))+".rdf";
+			saveOntologyToFile(manager, destinationFilePath, emmo, new RDFXMLDocumentFormat());
+			destinationFilePaths.add(destinationFilePath);
+		}
+		return emmo;
+	}
+
+	private static void mergeOntology(OWLOntologyManager mergedOntologyManager, OWLOntology i) {
+		try {
+			mergedOntologyManager.loadOntology(i.getOntologyID().getOntologyIRI().get());
+		} catch(Exception e) {
+			System.err.println("Could not merge: "+i.getOntologyID().getOntologyIRI().get()+" - "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+	private static void mergeOntologyFromDocuments(OWLOntologyManager mergedOntologyManager, String filePath) {
+		try {
+			mergedOntologyManager.loadOntologyFromOntologyDocument(new File(filePath));
+		} catch(Exception e) {
+			System.err.println("Could not merge: "+filePath+" - "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	protected static File saveOntologyToFile(OWLOntologyManager manager,
+			String destinationPath, OWLOntology emmoMerged,
+			OWLDocumentFormat format) throws OWLOntologyStorageException {
+		File outputFile = new File(destinationPath);
+		// Save the inferred ontology.
+		manager.saveOntology(emmoMerged,
+				format,
+				IRI.create((outputFile.toURI())));
+		return outputFile;
+	}
+
+	protected static void fixErrors(File outputFile) {
+		String f = CommonUtils.readTextFile(outputFile.getAbsolutePath(), "UTF-8");
+		if(f.contains("#decimal")) {
+			f = f.replace("#decimal", "#double");
+			CommonUtils.printFileUsingPrintWriter(f, outputFile.getAbsolutePath(), "UTF-8");
 		}
 	}
 
@@ -309,5 +374,40 @@ public class ReasonerUtils {
 		String libraryPath = System.getProperty("user.dir")+File.separator+prop.getProperty("factpp.jni.path");
 		System.setProperty("factpp.jni.path", libraryPath);
 		return libraryPath;
+	}
+	
+	private static void test(String baseEMMOdir, String destDir) {
+		String libraryPath = init();
+		OWLOntologyManager mergedOntologyManager = OWLManager.createOWLOntologyManager();
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		
+		
+		
+		String sourceDirApplication = "application";
+		String sourceDirDomain = "domain";
+		String sourceDirMiddle = "middle";
+		String sourceDirTop = "top";
+		
+		List<String> sourceDirs = Arrays.asList(sourceDirTop, sourceDirMiddle, sourceDirDomain, sourceDirApplication);
+		for(String sourceDir: sourceDirs) {
+			String dir = baseEMMOdir+File.separator+sourceDir;
+			System.out.println("Source directory: "+dir);
+			File[] files = new File(dir).listFiles(); 
+			for(File f: files) {
+			
+				if(!f.isDirectory() && f.getName().endsWith(".ttl")) {
+					System.out.println("--- Converting file: "+f.getAbsolutePath()+" to RDF/XML format...");
+					processOntology(manager, mergedOntologyManager, f.getAbsolutePath(), destDir+f.getName().substring(0, f.getName().lastIndexOf("."))+".rdf", null, "rdf", false, false);
+				}
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		core(args);
+//		String baseEMMOdir = "C:\\GitRepositories\\EMMO";
+//		String destDir = "C:\\Dropbox (Personal)\\Goldbeck\\EMMO\\refactoring\\original\\";
+		
+//		test(baseEMMOdir, destDir);
 	}
 }

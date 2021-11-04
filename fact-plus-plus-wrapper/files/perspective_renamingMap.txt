@@ -1,0 +1,9 @@
+******* perspective *******
+---owl:Class---
+EMMO_49267eba_5548_4163_8f36_518d65b583f9|Perspective
+---owl:ObjectProperty---
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---
+EMMO_1b715ac7_3d96_49bf_add5_47d44af67b85|ISO9000Reference
+EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62|ISOReference
+EMMO_b81b8844_fa6f_4a4c_a6a7_dda97b1bf853|ISO14040Reference

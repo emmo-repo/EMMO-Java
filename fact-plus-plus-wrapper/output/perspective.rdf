@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://emmo.info/emmo/middle/perspective#"
+     xml:base="http://emmo.info/emmo/middle/perspective"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo="http://emmo.info/emmo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://emmo.info/emmo/middle/perspective">
+        <owl:versionIRI rdf:resource="http://emmo.info/emmo/1.0.0-beta/middle/perspective"/>
+        <terms:abstract xml:lang="en">The perspective module provides the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a &apos;Perspective&apos; subclass.</terms:abstract>
+        <terms:contributor>Adham Hashibon, Fraunhofer IWM, DE</terms:contributor>
+        <terms:contributor>Georg Schmitz, Access, DE</terms:contributor>
+        <terms:contributor>Gerhard Goldbeck, Goldbeck Consulting Ltd (UK)</terms:contributor>
+        <terms:contributor>Jesper Friis, SINTEF, NO</terms:contributor>
+        <terms:creator>Emanuele Ghedini, University of Bologna, IT</terms:creator>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
+        <terms:publisher>EMMC ASBL</terms:publisher>
+        <terms:title xml:lang="en">Perspective</terms:title>
+        <rdfs:comment xml:lang="en">Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+        <rdfs:comment xml:lang="en">The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+        <owl:versionInfo>1.0.0-beta</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_1b715ac7_3d96_49bf_add5_47d44af67b85 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#EMMO_1b715ac7_3d96_49bf_add5_47d44af67b85">
+        <skos:prefLabel xml:lang="en">ISO9000Reference</skos:prefLabel>
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62">
+        <skos:prefLabel xml:lang="en">ISOReference</skos:prefLabel>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25"/>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_b81b8844_fa6f_4a4c_a6a7_dda97b1bf853 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#EMMO_b81b8844_fa6f_4a4c_a6a7_dda97b1bf853">
+        <skos:prefLabel xml:lang="en">ISO14040Reference</skos:prefLabel>
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo#EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac"/>
+        <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The class of individuals that stand for real world objects according to a specific representational perspective.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:comment xml:lang="en">This class is the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a &apos;Perspective&apos; subclass.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">Perspective</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">Perspective</owl:annotatedTarget>
+        <emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 xml:lang="en">From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’.</emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.19.2021-07-31T19:16:32Z) https://github.com/owlcs/owlapi/ -->
+
+

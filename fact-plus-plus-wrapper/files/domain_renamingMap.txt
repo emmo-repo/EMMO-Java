@@ -1,0 +1,5 @@
+******* domain *******
+---owl:Class---
+---owl:ObjectProperty---
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---

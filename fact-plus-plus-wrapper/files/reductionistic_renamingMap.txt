@@ -1,0 +1,12 @@
+******* reductionistic *******
+---owl:Class---
+EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13|Reductionistic
+EMMO_36c79456_e29c_400d_8bd3_0eedddb82652|State
+EMMO_52211e5e_d767_4812_845e_eb6b402c476a|Existent
+---owl:ObjectProperty---
+EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d|hasTemporalDirectPart
+EMMO_663859e5_add3_4c9e_96fb_c99399de278d|hasSpatioTemporalDirectPart
+EMMO_74a75cf1_3418_4244_b43c_b5db94635d42|hasDirectPart
+EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe|hasSpatialDirectPart
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---

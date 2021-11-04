@@ -1,0 +1,20 @@
+******* properties *******
+---owl:Class---
+EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069|Observation
+EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c|Observer
+EMMO_251cfb4f_5c75_4778_91ed_6c8395212fd8|SubjectiveProperty
+EMMO_25fcfc72_406b_4c16_a4fa_192c813d55f6|AssignedProperty
+EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978|ObjectiveProperty
+EMMO_53a6852e_7626_4c8f_9458_92ba7210df41|ModelledProperty
+EMMO_9be5fcc4_0d8b_481d_b984_6338d4b55588|Measurer
+EMMO_ab2cdc3c_6cc6_4640_8de1_8a3c90fd4b66|MeasuredProperty
+EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba|Property
+EMMO_dc5dee4e_4305_4a21_8dd5_4e8311c98c73|Observed
+EMMO_f273529f_9f2c_4877_a94b_5b47590353fc|Assigner
+EMMO_f94e509a_be29_4365_a4cd_70165e47e232|Modeller
+---owl:ObjectProperty---
+EMMO_d271f202_4c1a_4d74_b86a_387c82034eb7|hasObserved
+EMMO_e1097637_70d2_4895_973f_2396f04fa204|hasProperty
+EMMO_eeb8118c_b290_4f57_b0f8_bd65bb6d77ad|hasObserver
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---

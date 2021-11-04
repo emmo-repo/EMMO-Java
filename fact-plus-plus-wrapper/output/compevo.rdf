@@ -1,0 +1,1066 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://emmo.info/emmo/application/compevo#"
+     xml:base="http://emmo.info/emmo/application/compevo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo="http://emmo.info/emmo#0"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:emmo1="http://emmo.info/emmo#"
+     xmlns:emmo2="http://emmo.info/emmo#499"
+     xmlns:emmo3="http://emmo.info/emmo#967080"
+     xmlns:emmo4="http://emmo.info/emmo#8785"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:manufacturing="http://emmo.info/emmo/middle/manufacturing#36">
+    <owl:Ontology rdf:about="http://emmo.info/emmo/application/compevo">
+        <owl:versionIRI rdf:resource="http://emmo.info/emmo/application/compevo"/>
+        <terms:contributor xml:lang="en">Brendon Weager (COMPEVO)</terms:contributor>
+        <terms:contributor xml:lang="en">Jeper Friis (SINTEF)</terms:contributor>
+        <terms:contributor xml:lang="en">Michael Noeske (FRAUNHOFER IFAM)</terms:contributor>
+        <terms:contributor xml:lang="en">Vinicius Carrillo Beber (FRAUNHOFER IFAM)</terms:contributor>
+        <terms:creator xml:lang="en">Emanuele Ghedini (UNIBO)</terms:creator>
+        <terms:license xml:lang="en">Confidential within the OntoTrans consortium.</terms:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#b432d2d5_25f4_4165_99c5_5935a7763c1a -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#b432d2d5_25f4_4165_99c5_5935a7763c1a"/>
+    
+
+
+    <!-- http://emmo.info/emmo#8785be5a_2493_4b12_8f39_31907ab11748 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#8785be5a_2493_4b12_8f39_31907ab11748"/>
+    
+
+
+    <!-- http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d -->
+
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+    
+
+
+    <!-- http://emmo.info/emmo#ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c"/>
+    
+
+
+    <!-- http://emmo.info/emmo#ec7464a9_d99d_45f8_965b_4e9230ea8356 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+    
+
+
+    <!-- http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+    
+
+
+    <!-- http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#b69dbb56_2192_4294_a7cb_e08883834e8d -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#b69dbb56_2192_4294_a7cb_e08883834e8d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A factory-made combination of reactive resins and reinforcing fibres, plus other necessary additive chemicals, ready to be moulded.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Prepreg</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#b69dbb56_2192_4294_a7cb_e08883834e8d"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">A factory-made combination of reactive resins and reinforcing fibres, plus other necessary additive chemicals, ready to be moulded.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://compositesuk.co.uk/composite-materials/glossary-terms</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#b90b44cc_ce83_4ec4_9fbc_91c7c5b66f6d -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#b90b44cc_ce83_4ec4_9fbc_91c7c5b66f6d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#d33042c6_e9a1_4a45_ad75_74bef95173d9"/>
+        <skos:prefLabel xml:lang="en">CoverReleaseLayer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#bfa41068_83ee_4030_b637_70b95bc83d59 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#bfa41068_83ee_4030_b637_70b95bc83d59">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The structure resulting from the curing of multiple stacked prepreg plies.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Laminate</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#bfa41068_83ee_4030_b637_70b95bc83d59"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">The structure resulting from the curing of multiple stacked prepreg plies.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://compositesuk.co.uk/composite-materials/glossary-terms</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#5c68497d_2544_4cd4_897b_1ea783c9f6fe"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The mold, either one- or two-sided and either open or closed, in or upon which composite material is placed in order to make a part.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">CoverTool</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">The mold, either one- or two-sided and either open or closed, in or upon which composite material is placed in order to make a part.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.compositesworld.com/glossary</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#c41436ae_1a8b_4445_8c15_733279619ae2 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#c41436ae_1a8b_4445_8c15_733279619ae2">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A planar textile constructed with fibres (or yarns), which can be either woven (interlaced using a weaving process) or non-woven (not interlaced).</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">TextileFabric</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#c5e28d26_7adf_491b_a7fb_06ed0e0a3ee5 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#c5e28d26_7adf_491b_a7fb_06ed0e0a3ee5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#16cc6deb_d9f8_4ede_900a_a17cc86e57c4"/>
+        <skos:prefLabel xml:lang="en">ManufacturingLine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Soft solid or highly viscous substance, usually containing prepolymers with reactive groups.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:seeAlso xml:lang="en">https://doi.org/10.1351/goldbook.RT07166</rdfs:seeAlso>
+        <skos:prefLabel xml:lang="en">Resin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#d33042c6_e9a1_4a45_ad75_74bef95173d9 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#d33042c6_e9a1_4a45_ad75_74bef95173d9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A specially formulated material placed between the mold and uncured resin/fiber (usually sprayed or painted on the mold surface) to prevent permanent bonding between the two during cure and facilitates demolding after cure.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:isDefinedBy xml:lang="en">COMP WORLD</rdfs:isDefinedBy>
+        <skos:prefLabel xml:lang="en">ReleaseLayer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#5f75da55_e11b_48fb_bf65_97e65be81ec4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A manufactured mixture of a resin and ingredients.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">FormulatedResin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#dcf3c256_a90b_4e11_b773_7d79158926b0 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#dcf3c256_a90b_4e11_b773_7d79158926b0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#c5e28d26_7adf_491b_a7fb_06ed0e0a3ee5"/>
+        <skos:prefLabel xml:lang="en">PrepregLine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">StackedPrepreg</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#02af4a99_b01b_4363_879a_f22b06e46e77 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#02af4a99_b01b_4363_879a_f22b06e46e77">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A material made up of resin and reinforcement (usually fibre).</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Composite</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#02af4a99_b01b_4363_879a_f22b06e46e77"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">A material made up of resin and reinforcement (usually fibre).</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://compositesuk.co.uk/composite-materials/glossary-terms</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#0385b052_31a5_4a4b_9c0b_c1660361dd38 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#0385b052_31a5_4a4b_9c0b_c1660361dd38">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#2e0c46d9_ebb5_4044_a972_89f7504586f9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#f22abf74_4538_4f50_ab85_09908cdda707"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#7504d55f_ebb9_4003_a217_0681c1a68c0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#f22abf74_4538_4f50_ab85_09908cdda707"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#926dab75_73c6_420b_856b_23bdf03e9ea0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">ComponentManufacturing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#1b753d41_0ee4_4119_914e_8aa0fe635004 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#1b753d41_0ee4_4119_914e_8aa0fe635004">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#4207e895_8b83_4318_996a_72cfb32acd94"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Intermediate mixture to make a formulation that allows formulated resin differentiation.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ResinIngredient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#2e0c46d9_ebb5_4044_a972_89f7504586f9 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#2e0c46d9_ebb5_4044_a972_89f7504586f9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#c5e28d26_7adf_491b_a7fb_06ed0e0a3ee5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#dba27ca1_33c9_4443_a912_1519ce4c39ec"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#b90b44cc_ce83_4ec4_9fbc_91c7c5b66f6d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#dba27ca1_33c9_4443_a912_1519ce4c39ec"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#dba27ca1_33c9_4443_a912_1519ce4c39ec"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#4e9a6250_493e_495b_9843_2897f9000cde"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#dba27ca1_33c9_4443_a912_1519ce4c39ec"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">ComponentManufacturingLine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#365ca26c_a1b4_4279_adaf_722e86d75664 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#365ca26c_a1b4_4279_adaf_722e86d75664">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#62a969ae_e80f_4506_b5b0_5f921aef4d90"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#5f75da55_e11b_48fb_bf65_97e65be81ec4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">ResinPreparation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#1b753d41_0ee4_4119_914e_8aa0fe635004"/>
+        <emmo1:b432d2d5_25f4_4165_99c5_5935a7763c1a xml:lang="en">An additive can provide flame retardancy and UV resistance properties to a resin.</emmo1:b432d2d5_25f4_4165_99c5_5935a7763c1a>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A term used for a large number of specialist chemicals which are added to compounds to impart specific properties.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://compositesuk.co.uk/composite-materials/glossary-terms</rdfs:isDefinedBy>
+        <skos:prefLabel xml:lang="en">Additive</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#4e9a6250_493e_495b_9843_2897f9000cde -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#4e9a6250_493e_495b_9843_2897f9000cde">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#d33042c6_e9a1_4a45_ad75_74bef95173d9"/>
+        <skos:prefLabel xml:lang="en">MouldReleaseLayer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#b69dbb56_2192_4294_a7cb_e08883834e8d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#c41436ae_1a8b_4445_8c15_733279619ae2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A roll of prepreg material.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PrepregRoll</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#5c4695ff_9654_4114_99b6_05b608e02176 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#5c4695ff_9654_4114_99b6_05b608e02176">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">CompositeLaminate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#5ef6a3b4_8c85_436b_92d4_b64249dd2ed7 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#5ef6a3b4_8c85_436b_92d4_b64249dd2ed7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo/application/compevo#bfa41068_83ee_4030_b637_70b95bc83d59"/>
+                    <rdf:Description rdf:about="http://emmo.info/emmo/application/compevo#02af4a99_b01b_4363_879a_f22b06e46e77"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <skos:prefLabel xml:lang="en">CompositeLaminate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#5f75da55_e11b_48fb_bf65_97e65be81ec4 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#5f75da55_e11b_48fb_bf65_97e65be81ec4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#1b753d41_0ee4_4119_914e_8aa0fe635004"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A substance that increases the rate of a reaction without modifying the overall standard Gibbs energy change in the reaction.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:seeAlso xml:lang="en">https://doi.org/10.1351/goldbook.C00876</rdfs:seeAlso>
+        <skos:prefLabel xml:lang="en">Catalyst</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#62a969ae_e80f_4506_b5b0_5f921aef4d90 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#62a969ae_e80f_4506_b5b0_5f921aef4d90">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#86a305d1_7644_48be_b84c_1f976679b904"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A batch resin mixer.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">ResinMixer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/application/compevo#b69dbb56_2192_4294_a7cb_e08883834e8d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo#499e24a5_5072_4c83_8625_fe3f96ae4a8d"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A prepreg a piece cut from a prepreg roll, which can be stacked.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:altLabel xml:lang="en">Ply</skos:altLabel>
+        <skos:altLabel xml:lang="en">PrepregPart</skos:altLabel>
+        <skos:prefLabel xml:lang="en">PrepregPiece</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#7504d55f_ebb9_4003_a217_0681c1a68c0b -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#7504d55f_ebb9_4003_a217_0681c1a68c0b">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#b90b44cc_ce83_4ec4_9fbc_91c7c5b66f6d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#4e9a6250_493e_495b_9843_2897f9000cde"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#5c4695ff_9654_4114_99b6_05b608e02176"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The process of shaping composite materials into a solid mass of prescribed shape and size, using a mold or tool.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:isDefinedBy xml:lang="en">https://www.compositesworld.com/glossary</rdfs:isDefinedBy>
+        <skos:altLabel xml:lang="en">Moulding</skos:altLabel>
+        <skos:prefLabel xml:lang="en">ShapingAndCuring</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#5c68497d_2544_4cd4_897b_1ea783c9f6fe"/>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The mold, either one- or two-sided and either open or closed, in or upon which composite material is placed in order to make a part.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">MouldTool</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">The mold, either one- or two-sided and either open or closed, in or upon which composite material is placed in order to make a part.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.compositesworld.com/glossary</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#9df141d9_aee1_469f_989a_9d35dbf98528 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#9df141d9_aee1_469f_989a_9d35dbf98528">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#dcf3c256_a90b_4e11_b773_7d79158926b0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#c41436ae_1a8b_4445_8c15_733279619ae2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The process of prepreg manufacturing.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Prepregging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#926dab75_73c6_420b_856b_23bdf03e9ea0 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/application/compevo#926dab75_73c6_420b_856b_23bdf03e9ea0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo#0e86a108_9d4d_4582_8126_f0c527d81901"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/manufacturing#36e69413_8c59_4799_946c_10b05d266e22"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <emmo3:e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">An arrangement of prepreg parts (ply) orientations and material components in a laminate specified with respect to some reference direction.</emmo3:e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">Stacking</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://emmo.info/emmo/application/compevo#926dab75_73c6_420b_856b_23bdf03e9ea0"/>
+        <owl:annotatedProperty rdf:resource="http://emmo.info/emmo#967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+        <owl:annotatedTarget xml:lang="en">An arrangement of prepreg parts (ply) orientations and material components in a laminate specified with respect to some reference direction.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.compositesworld.com/glossary</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/manufacturing#16cc6deb_d9f8_4ede_900a_a17cc86e57c4 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/middle/manufacturing#16cc6deb_d9f8_4ede_900a_a17cc86e57c4"/>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/manufacturing#5c68497d_2544_4cd4_897b_1ea783c9f6fe -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/middle/manufacturing#5c68497d_2544_4cd4_897b_1ea783c9f6fe"/>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/manufacturing#86a305d1_7644_48be_b84c_1f976679b904 -->
+
+
+    <owl:Class rdf:about="http://emmo.info/emmo/middle/manufacturing#86a305d1_7644_48be_b84c_1f976679b904"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#a0ad8d61_20ee_47d9_a69e_97e02fc48286 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#a0ad8d61_20ee_47d9_a69e_97e02fc48286">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#5f75da55_e11b_48fb_bf65_97e65be81ec4"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311"/>
+        <skos:prefLabel xml:lang="en">catalyst</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#a26121a9_1d71_4b19_b655_c8b2ad2e9490 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#a26121a9_1d71_4b19_b655_c8b2ad2e9490">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#fb578222_b41f_47c3_8109_8ddc4dd868e1"/>
+        <emmo1:b2282816_b7a3_44c6_b2cb_3feff1ceb7fe rdf:resource="http://emmo.info/emmo/application/compevo#0eabb27f_dbbe_4997_a328_e62bd7c47f35"/>
+        <emmo1:b2282816_b7a3_44c6_b2cb_3feff1ceb7fe rdf:resource="http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f"/>
+        <emmo1:b2282816_b7a3_44c6_b2cb_3feff1ceb7fe rdf:resource="http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8"/>
+        <skos:prefLabel xml:lang="en">stacked_prepreg</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#a89f5001_38e1_4c1b_a8f0_773f7301d807 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#a89f5001_38e1_4c1b_a8f0_773f7301d807">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#c0a6d6dc_0b0d_40e4_a5f8_d47f3c0b41bb"/>
+        <skos:prefLabel xml:lang="en">cover_tool</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#a9642c4d_1c59_44e9_a133_861f396f4c74 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#a9642c4d_1c59_44e9_a133_861f396f4c74">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#b90b44cc_ce83_4ec4_9fbc_91c7c5b66f6d"/>
+        <skos:prefLabel xml:lang="en">cover_release_layer</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#aa7e7a51_81d8_4df8_992a_19331c21a6c9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#aa7e7a51_81d8_4df8_992a_19331c21a6c9">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311"/>
+        <skos:prefLabel xml:lang="en">additive_1</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#b11a2258_b6b2_447f_bb90_1b3f0aa0c72c -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#b11a2258_b6b2_447f_bb90_1b3f0aa0c72c">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#5c4695ff_9654_4114_99b6_05b608e02176"/>
+        <skos:prefLabel xml:lang="en">composite_laminate</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#b225b020_c000_4f7f_9329_ca43ca5eed34 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#b225b020_c000_4f7f_9329_ca43ca5eed34">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#86ae1b83_f4a3_4300_8945_df8f35bed4d1"/>
+        <skos:prefLabel xml:lang="en">mould_tool</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#b7fb407c_7d60_4d2a_ad4d_0a61e93f0636 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#b7fb407c_7d60_4d2a_ad4d_0a61e93f0636">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#926dab75_73c6_420b_856b_23bdf03e9ea0"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#0eabb27f_dbbe_4997_a328_e62bd7c47f35"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8"/>
+        <emmo:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/compevo#a26121a9_1d71_4b19_b655_c8b2ad2e9490"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919"/>
+        <skos:prefLabel xml:lang="en">stacking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#ec1554b5_c06a_498c_bb10_6d0da4f63b05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#ec1554b5_c06a_498c_bb10_6d0da4f63b05">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#4afa0aec_8d0c_4321_91dd_bc1578695b0d"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311"/>
+        <skos:prefLabel xml:lang="en">additive_2</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#0eabb27f_dbbe_4997_a328_e62bd7c47f35 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#0eabb27f_dbbe_4997_a328_e62bd7c47f35">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+        <emmo4:be5a_2493_4b12_8f39_31907ab11748 rdf:resource="http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8"/>
+        <skos:prefLabel xml:lang="en">prepreg_piece_1</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+        <skos:prefLabel xml:lang="en">prepreg_piece_3</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#07cedaf1_dee4_4ceb_88f4_b1d681ed792f -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#07cedaf1_dee4_4ceb_88f4_b1d681ed792f">
+        <rdf:type rdf:resource="http://emmo.info/emmo#a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#8506559d_19a5_497c_9291_51eca6e3dbf9"/>
+        <emmo:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#367ea152_40f0_4658_8585_8f16051865ac"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311"/>
+        <skos:prefLabel xml:lang="en">prepregging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#21b9196b_3b7f_4c09_a077_0b84197898ef -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#21b9196b_3b7f_4c09_a077_0b84197898ef">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#d0ba5de7_9cd4_4890_80ee_c153e73382c6"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311"/>
+        <skos:prefLabel xml:lang="en">resin</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#367ea152_40f0_4658_8585_8f16051865ac -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#367ea152_40f0_4658_8585_8f16051865ac">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#c41436ae_1a8b_4445_8c15_733279619ae2"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919"/>
+        <skos:prefLabel xml:lang="en">textile_fabric</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#46c12e8b_5ce4_49d7_83c5_5f2e54668f0a -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#46c12e8b_5ce4_49d7_83c5_5f2e54668f0a">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#365ca26c_a1b4_4279_adaf_722e86d75664"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#940fb705_bd2a_47dd_abfa_58fbe50c70dc"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#a0ad8d61_20ee_47d9_a69e_97e02fc48286"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#aa7e7a51_81d8_4df8_992a_19331c21a6c9"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#ec1554b5_c06a_498c_bb10_6d0da4f63b05"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#21b9196b_3b7f_4c09_a077_0b84197898ef"/>
+        <skos:prefLabel xml:lang="en">resin_preparation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#516307d2_587f_49d3_9a0f_4aab0d3bd311">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#d7df517c_b14a_477b_a0ad_4579cf35d052"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919"/>
+        <skos:prefLabel xml:lang="en">formulated_resin</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#651b37d4_8319_4bc1_b0e1_9ea733a161cb"/>
+        <emmo4:be5a_2493_4b12_8f39_31907ab11748 rdf:resource="http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f"/>
+        <skos:prefLabel xml:lang="en">prepreg_piece_2</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#7504e6c9_693b_4b1e_b8c0_20e842ffc280 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#7504e6c9_693b_4b1e_b8c0_20e842ffc280">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#7504d55f_ebb9_4003_a217_0681c1a68c0b"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#a89f5001_38e1_4c1b_a8f0_773f7301d807"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#a9642c4d_1c59_44e9_a133_861f396f4c74"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#b225b020_c000_4f7f_9329_ca43ca5eed34"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#9c18c502_c518_4fad_924c_cf0a69f962c7"/>
+        <emmo:e86a108_9d4d_4582_8126_f0c527d81901 rdf:resource="http://emmo.info/emmo/application/compevo#b11a2258_b6b2_447f_bb90_1b3f0aa0c72c"/>
+        <manufacturing:e69413_8c59_4799_946c_10b05d266e22 rdf:resource="http://emmo.info/emmo/application/compevo#a26121a9_1d71_4b19_b655_c8b2ad2e9490"/>
+        <skos:prefLabel xml:lang="en">shaping_and_curing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#83c63853_5ed7_41d4_a1ef_cdfa9cc10919">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#45ed7ba3_f68c_416c_8fdb_397992c5d7dc"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#0eabb27f_dbbe_4997_a328_e62bd7c47f35"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#03d66071_3ec1_4c2f_b9ab_3a0f2fb2bb4f"/>
+        <emmo2:e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:resource="http://emmo.info/emmo/application/compevo#7cfaa95e_bd64_4e61_b923_3a45cc17bbd8"/>
+        <skos:prefLabel xml:lang="en">prepreg_roll</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#8506559d_19a5_497c_9291_51eca6e3dbf9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#8506559d_19a5_497c_9291_51eca6e3dbf9">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#dcf3c256_a90b_4e11_b773_7d79158926b0"/>
+        <skos:prefLabel xml:lang="en">prepreg_line</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#9c18c502_c518_4fad_924c_cf0a69f962c7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#9c18c502_c518_4fad_924c_cf0a69f962c7">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#4e9a6250_493e_495b_9843_2897f9000cde"/>
+        <skos:prefLabel xml:lang="en">mould_release_layer</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#9d278deb_1385_4c29_bc43_3d2d86a76c2c -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#9d278deb_1385_4c29_bc43_3d2d86a76c2c">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#2e0c46d9_ebb5_4044_a972_89f7504586f9"/>
+        <emmo1:dba27ca1_33c9_4443_a912_1519ce4c39ec rdf:resource="http://emmo.info/emmo/application/compevo#a89f5001_38e1_4c1b_a8f0_773f7301d807"/>
+        <emmo1:dba27ca1_33c9_4443_a912_1519ce4c39ec rdf:resource="http://emmo.info/emmo/application/compevo#a9642c4d_1c59_44e9_a133_861f396f4c74"/>
+        <emmo1:dba27ca1_33c9_4443_a912_1519ce4c39ec rdf:resource="http://emmo.info/emmo/application/compevo#b225b020_c000_4f7f_9329_ca43ca5eed34"/>
+        <emmo1:dba27ca1_33c9_4443_a912_1519ce4c39ec rdf:resource="http://emmo.info/emmo/application/compevo#9c18c502_c518_4fad_924c_cf0a69f962c7"/>
+        <skos:prefLabel xml:lang="en">component_manufacturing_line</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#90b362c6_b847_417f_b09f_5060d37e6ef7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#90b362c6_b847_417f_b09f_5060d37e6ef7">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#0385b052_31a5_4a4b_9c0b_c1660361dd38"/>
+        <emmo1:ae2d1a96_bfa1_409a_a7d2_03d69e8a125a rdf:resource="http://emmo.info/emmo/application/compevo#9d278deb_1385_4c29_bc43_3d2d86a76c2c"/>
+        <emmo1:f22abf74_4538_4f50_ab85_09908cdda707 rdf:resource="http://emmo.info/emmo/application/compevo#b7fb407c_7d60_4d2a_ad4d_0a61e93f0636"/>
+        <emmo1:f22abf74_4538_4f50_ab85_09908cdda707 rdf:resource="http://emmo.info/emmo/application/compevo#7504e6c9_693b_4b1e_b8c0_20e842ffc280"/>
+        <skos:prefLabel xml:lang="en">component_manufacturing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://emmo.info/emmo/application/compevo#940fb705_bd2a_47dd_abfa_58fbe50c70dc -->
+
+
+    <owl:NamedIndividual rdf:about="http://emmo.info/emmo/application/compevo#940fb705_bd2a_47dd_abfa_58fbe50c70dc">
+        <rdf:type rdf:resource="http://emmo.info/emmo/application/compevo#62a969ae_e80f_4506_b5b0_5f921aef4d90"/>
+        <skos:prefLabel xml:lang="en">resin_mixer</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.19.2021-07-31T19:16:32Z) https://github.com/owlcs/owlapi/ -->
+
+

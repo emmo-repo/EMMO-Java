@@ -1,0 +1,21 @@
+******* ordinal *******
+---owl:Class---
+EMMO_25a3da5e_eab1_42dd_8081_61dd09d34e1b|Arrangement
+EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c|OrderedElement
+EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5|Sequence
+EMMO_42fc460a_4bf3_4d0b_8dee_3c7efcefebb5|SpatialOrderedElement
+EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6|Ordered
+EMMO_e0954911_fc88_492a_9830_fdb238e28cc2|TemporalOrderedElement
+---owl:ObjectProperty---
+EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6|hasSpatialLast
+EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007|hasSpatialFirst
+EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d|hasTemporalNext
+EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a|hasNext
+EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2|hasRest
+EMMO_66873eb5_7e42_4566_a906_bd97a832f19b|hasSpatialRest
+EMMO_8785be5a_2493_4b12_8f39_31907ab11748|hasSpatialNext
+EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e|hasTemporalLast
+EMMO_fb168b10_a27b_4409_a002_35671319d170|hasTemporalRest
+EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b|hasTemporalFirst
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---

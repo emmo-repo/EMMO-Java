@@ -1,0 +1,10 @@
+******* persistence *******
+---owl:Class---
+EMMO_135ab8ea_e028_439e_be64_3e0f9734ea2b|NaturalProcess
+EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce|Process
+EMMO_90ae56e4_d197_49b6_be1a_0049e4756606|Object
+EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c|IntentionalProcess
+EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b|Persistence
+---owl:ObjectProperty---
+---owl:DatatypeProperty---
+---owl:AnnotationProperty---
