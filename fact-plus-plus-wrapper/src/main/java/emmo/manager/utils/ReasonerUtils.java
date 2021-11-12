@@ -50,7 +50,7 @@ public class ReasonerUtils {
 		OWLOntologyManager mergedOntologyManager = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		
-		String iri = "C:/GitRepositories/EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
+		String iri = "EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
 		String outputFormat = "rdf";
 		String destinationPath = WORKING_DIRECTORY+"output";
 		String options = "secpodj";
@@ -285,11 +285,14 @@ public class ReasonerUtils {
 					StringBuilder sb = new StringBuilder("");
 					try {
 						for(String destinationFilePath: destinationFilePaths) {
+							System.out.println("*** *** * Generating renaming map for "+destinationFilePath);
 							sb.append(EMMOUtils.generateRenamingMap(destinationFilePath));
 						}
+						System.out.println("*** Renaming map generated.");
 						CommonUtils.printFileUsingPrintWriter(sb.toString(), "files/renamingMap.txt", "UTF-8");
 						
 						EMMOUtils.replaceHexadecimalUrisWithLabels(outputFile.getAbsolutePath(), false);
+						System.out.println("*** Renaming completed.");
 					} catch(Exception e) {
 						System.err.println("Could not rename the ontology's URIs - "+e.getMessage());
 					}
