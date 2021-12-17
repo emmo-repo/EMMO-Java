@@ -50,9 +50,9 @@ public class ReasonerUtils {
 		OWLOntologyManager mergedOntologyManager = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		
-		String iri = "EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
+		String iri = "http://emmo.info/emmo/1.0.0-beta2"; //"EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
 		String outputFormat = "rdf";
-		String destinationPath = WORKING_DIRECTORY+"output";
+		String destinationPath = WORKING_DIRECTORY+"output/beta2";
 		String options = "secpodj";
 		
 		Boolean useReasoner = true;
@@ -274,7 +274,8 @@ public class ReasonerUtils {
 			
 			if(emmoMerged!=null) {
 				System.out.println("*** Saving merged ontology...");
-				outputFile = saveOntologyToFile(manager, destinationPath+File.separator+"full_ontology"+asserted+"."+outputFormat, emmoMerged, format);
+				String destinationFilePathAsserted = destinationPath+File.separator+"full_ontology"+asserted+"."+outputFormat;
+				outputFile = saveOntologyToFile(manager, destinationFilePathAsserted, emmoMerged, format);
 				
 				/* Fixing errors */
 				fixErrors(outputFile);
@@ -284,9 +285,18 @@ public class ReasonerUtils {
 					System.out.println("*** Remapping hexadecimal URIs to verbose URIs...");
 					StringBuilder sb = new StringBuilder("");
 					try {
-						for(String destinationFilePath: destinationFilePaths) {
-							System.out.println("*** *** * Generating renaming map for "+destinationFilePath);
-							sb.append(EMMOUtils.generateRenamingMap(destinationFilePath));
+						if(destinationFilePaths!=null && destinationFilePaths.size()>0) {
+							for(String destinationFilePath: destinationFilePaths) {
+								System.out.println("*** *** * Generating renaming map for "+destinationFilePath);
+								sb.append(EMMOUtils.generateRenamingMap(destinationFilePath));
+							}
+						} else {
+							if(outputFormat.equals("ttl")) {
+								convertFile(manager, new File(destinationFilePathAsserted), destinationPath, destinationFilePaths);
+							}
+							String filePath = destinationPath+File.separator+"full_ontology"+asserted+".rdf";
+							System.out.println("*** *** * Generating renaming map for "+filePath);
+							sb.append(EMMOUtils.generateRenamingMap(filePath));
 						}
 						System.out.println("*** Renaming map generated.");
 						CommonUtils.printFileUsingPrintWriter(sb.toString(), "files/renamingMap.txt", "UTF-8");
@@ -323,6 +333,18 @@ public class ReasonerUtils {
 			String destinationFilePath = destinationPath+File.separator+sourceFile.getName().substring(0, sourceFile.getName().lastIndexOf("."))+".rdf";
 			saveOntologyToFile(manager, destinationFilePath, emmo, new RDFXMLDocumentFormat());
 			destinationFilePaths.add(destinationFilePath);
+		}
+		return emmo;
+	}
+	
+	private static OWLOntology convertFileFromOwlToTtl(OWLOntologyManager manager, File sourceFile, String destinationPath) throws OWLOntologyCreationException, OWLOntologyStorageException {
+		OWLOntology emmo;
+		emmo = manager.loadOntologyFromOntologyDocument(sourceFile);
+		if(sourceFile.getName().endsWith(".owl")) {
+			System.out.println("--- Converting file: "+sourceFile.getAbsolutePath()+" to TTL format...");
+			String destinationFilePath = destinationPath+File.separator+sourceFile.getName().substring(0, sourceFile.getName().lastIndexOf("."))+".ttl";
+			saveOntologyToFile(manager, destinationFilePath, emmo, new TurtleDocumentFormat());
+			//destinationFilePaths.add(destinationFilePath);
 		}
 		return emmo;
 	}
@@ -407,10 +429,21 @@ public class ReasonerUtils {
 	}
 	
 	public static void main(String[] args) {
-		core(args);
+//		core(args);
 //		String baseEMMOdir = "C:\\GitRepositories\\EMMO";
 //		String destDir = "C:\\Dropbox (Personal)\\Goldbeck\\EMMO\\refactoring\\original\\";
 		
 //		test(baseEMMOdir, destDir);
+		
+		String sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\access-emmo-material.owl";
+		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\access-model.owl";
+		String destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\";
+		
+		try {
+			convertFileFromOwlToTtl(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath);
+		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
