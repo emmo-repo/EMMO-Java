@@ -434,16 +434,33 @@ public class ReasonerUtils {
 //		String destDir = "C:\\Dropbox (Personal)\\Goldbeck\\EMMO\\refactoring\\original\\";
 		
 //		test(baseEMMOdir, destDir);
+
 		
-		String sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\access-emmo-material.owl";
-		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\access-model.owl";
-		String destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\";
+	
+//		String sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\access-emmo-material.owl";
+//		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\access-model.owl";
+//		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\access-manufacturingProcess.owl";
+//		sourceFile = "C:\\GitRepositories\\domain-mechanical-testing\\emmo-mechanical-testing.owl";
+//		String destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\";
+//		
+//		try {
+//			convertFileFromOwlToTtl(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath);
+//		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
+		String sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\MarketPlace\\Experts Ontology\\export.ttl";
+		String destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\MarketPlace\\Experts Ontology\\";
+		
+		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\emmo-mechanical-testing.ttl";
+		destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\";
 		try {
-			convertFileFromOwlToTtl(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath);
+			convertFile(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath, new ArrayList<String>());
 		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 }
