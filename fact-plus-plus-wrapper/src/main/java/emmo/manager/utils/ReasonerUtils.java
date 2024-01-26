@@ -51,12 +51,12 @@ public class ReasonerUtils {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		
 		String iri = "http://emmo.info/emmo/1.0.0-beta2"; //"EMMO"; //"https://emmo.info/emmo/1.0.0-alpha2";
-		String outputFormat = "rdf";
+		String outputFormat = "ttl";
 		String destinationPath = WORKING_DIRECTORY+"output/beta2";
 		String options = "secpodj";
 		
 		Boolean useReasoner = true;
-		Boolean remapURIs = true;
+		Boolean remapURIs = false;
 		
 		if(args!=null) {
 			int i = 0;
@@ -301,7 +301,7 @@ public class ReasonerUtils {
 						System.out.println("*** Renaming map generated.");
 						CommonUtils.printFileUsingPrintWriter(sb.toString(), "files/renamingMap.txt", "UTF-8");
 						
-						EMMOUtils.replaceHexadecimalUrisWithLabels(outputFile.getAbsolutePath(), false);
+						EMMOUtils.replaceHexadecimalUrisWithLabels(outputFile.getAbsolutePath(), "files/renamingMap.txt", false);
 						System.out.println("*** Renaming completed.");
 					} catch(Exception e) {
 						System.err.println("Could not rename the ontology's URIs - "+e.getMessage());
@@ -455,12 +455,21 @@ public class ReasonerUtils {
 		
 		sourceFile = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\emmo-mechanical-testing.ttl";
 		destinationPath = "C:\\Dropbox (Personal)\\Goldbeck\\Projects\\OYSTER\\OIE ontologies\\New OIE ontologies\\Temp\\";
-		try {
-			convertFile(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath, new ArrayList<String>());
-		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
+		sourceFile = "C:/GitRepositories/OIE-Ontologies/models.ttl";
+		destinationPath = "C:/GitRepositories/OIE-Ontologies/";
+//		try {
+//			convertFile(OWLManager.createOWLOntologyManager(), new File(sourceFile), destinationPath, new ArrayList<String>());
+//		} catch (OWLOntologyCreationException | OWLOntologyStorageException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		String filePath = "C:/GitRepositories/OIE-Ontologies/models.ttl";
+//		String map = EMMOUtils.generateRenamingMap(filePath);
+//		System.out.println(map);
+		String renamingMapFilePath = "files/oie_models_renamingMap.txt";
+//		CommonUtils.printFileUsingPrintWriter(map, renamingMapFilePath, "UTF-8");
+		EMMOUtils.replaceHexadecimalUrisWithLabels(filePath, renamingMapFilePath, false);
 		
 	}
 }
